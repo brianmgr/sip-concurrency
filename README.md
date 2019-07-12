@@ -43,3 +43,92 @@ This script writes CSV and DB files to file every time it runs.
 For safety, it _DOES NOT_ remove these files after the script has run.
 You should set up a cron job or something similar to prune these files at certain intervals.
 
+## Example output in terminal
+```Top seconds in epoch which incurred the most consecutive calls:
+
+TIMESTAMP    COUNT
+
+1556295570   25
+
+1556295571   25
+
+1556295569   24
+
+1556295567   23
+
+1556295568   23
+
+1556295566   22
+
+1556295564   21
+
+1556295565   21
+
+1556295563   20
+
+1556295562   19
+
+1556295560   18
+
+1556295561   18
+
+1556295559   17
+
+1556295557   16
+
+1556295558   16
+
+1556295556   15
+
+1556295554   14
+
+1556295555   14
+
+1556295553   13
+
+1556295552   12
+
+1556295550   11
+
+1556295551   11
+
+1556295548   10
+
+1556295549   10
+
+1556295572   10
+
+
+The following sqlite3 database file has been written to disk for data analysis:
+ACaeaeaeaeaeaeaeaeaeaeaeaeaeaeeaea_2019-07-12_run_at_17.23.33.db
+To save space, you may want to delete this.
+```
+## Example output in CSV file
+
+|TIMESTAMP|COUNT|
+|----------|:-------------:|
+|1556295570|25|
+|1556295571|25|
+|1556295569|24|
+|1556295567|23|
+|1556295568|23|
+|1556295566|22|
+|1556295564|21|
+|1556295565|21|
+|1556295563|20|
+|1556295562|19|
+|1556295560|18|
+|1556295561|18|
+|1556295559|17|
+|1556295557|16|
+|1556295558|16|
+|1556295556|15|
+|1556295554|14|
+|1556295555|14|
+|1556295553|13|
+|1556295552|12|
+|1556295550|11|
+|1556295551|11|
+|1556295548|10|
+|1556295549|10|
+|1556295572|10|
